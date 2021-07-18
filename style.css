@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(34, 2, 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+button{
+    background-color: rgb(194, 19, 101);
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 1px rgb(194, 19, 101) solid;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    overflow: hidden;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+button .circle{
+    position: absolute;
+    background-color: azure;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+    to{
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
